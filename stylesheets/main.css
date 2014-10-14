@@ -13,6 +13,10 @@ h1, h2, h3, p, h4 {
   padding: 0;
   color: #4A494A; }
 
+i {
+  margin: 0 2%;
+  color: #D45F5E; }
+
 a {
   color: #69C4CA;
   text-decoration: none; }
@@ -30,9 +34,9 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  width: 20%;
+  width: 15%;
   height: 100%;
-  border-right: 1px dotted #CDCCCC;
+  border-right: 2px dotted #CDCCCC;
   padding: 2%; }
   .leftNav img {
     width: 100%; }
@@ -75,11 +79,11 @@ a {
   .work .infoColumn {
     width: 45%;
     display: inline-block;
-    border-right: 1px dotted #CDCCCC;
+    border-right: 2px dotted #CDCCCC;
     padding-right: 5%;
     vertical-align: top; }
   .work .imageColumn {
-    width: 45%;
+    width: 44%;
     display: inline-block;
     padding-left: 5%;
     vertical-align: top; }
@@ -91,5 +95,10 @@ a {
     border-top: 1px solid #CDCCCC; }
   .work .project:last-child {
     border-bottom: 1px solid #CDCCCC; }
+
+.resume {
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 5%; }
 
 /*# sourceMappingURL=main.css.map */
