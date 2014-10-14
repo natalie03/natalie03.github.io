@@ -1,0 +1,118 @@
+
+$grey: #F5F5F5;
+$storm:#4A494A;
+$solidLines: 1px solid #CDCCCC;
+$dottedLines: 1px dotted #CDCCCC;
+$coral: #D45F5E;
+$blue: #69C4CA;
+.blue{
+  color:$blue;
+}
+.coral{
+  color:$coral;
+}
+body{
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color:$grey;
+}
+h1, h2, h3, p, h4{
+  margin:0;
+  padding:0;
+  color:$storm;
+
+}
+a{
+  color:$blue;
+  &:visited{
+    color:$blue;
+  }
+}
+.glyphicon{
+  margin:0 2%;
+  color:$coral;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 0;
+}
+.leftNav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  border-right: $dottedLines;
+  padding:2%;
+  img{
+    width:100%;
+  }
+  .submenu{
+    display:none;
+  }
+  ul:first-child{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    li{
+      padding:5% 0;
+    }
+  }
+}
+.rightContent{
+  width:80%;
+  float:right;
+  height:100%;
+  overflow:scroll;
+  display:inline-block;
+  position:relative;
+  display:block;
+}
+.about{
+  width:90%;
+  margin-left:5%;
+  padding:5% 0;
+  .aboutMe{
+    width:65%;
+    display:inline-block;
+    font-size:4.5em;
+    line-height:.9em;
+    margin-left:2%;
+  }
+  img{
+    width:30%;
+    vertical-align:top;
+    margin-left:2%;
+  }
+}
+.work{
+  width:90%;
+  margin-left:5%;
+  .infoColumn{
+    width:45%;
+    display:inline-block;
+    border-right:$dottedLines;
+    padding-right:5%;
+    vertical-align:top;
+  }
+  .imageColumn{
+    width:45%;
+    display:inline-block;
+    padding-left:5%;
+    vertical-align:top;
+    img{
+      width:100%;
+    }
+  }
+  .project{
+    height:250px;
+    padding-top:5%;
+    border-top:$solidLines;
+  }
+  .project:last-child{
+    border-bottom:$solidLines;
+  }
+}

@@ -1,0 +1,98 @@
+.blue {
+  color: #69C4CA; }
+
+.coral {
+  color: #D45F5E; }
+
+body {
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color: #F5F5F5; }
+
+h1, h2, h3, p, h4 {
+  margin: 0;
+  padding: 0;
+  color: #4A494A; }
+
+a {
+  color: #69C4CA; }
+  a:visited {
+    color: #69C4CA; }
+
+.glyphicon {
+  margin: 0 2%;
+  color: #D45F5E; }
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 0; }
+
+.leftNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  border-right: 1px dotted #CDCCCC;
+  padding: 2%; }
+  .leftNav img {
+    width: 100%; }
+  .leftNav .submenu {
+    display: none; }
+  .leftNav ul:first-child {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .leftNav ul:first-child li {
+      padding: 5% 0; }
+
+.rightContent {
+  width: 80%;
+  float: right;
+  height: 100%;
+  overflow: scroll;
+  display: inline-block;
+  position: relative;
+  display: block; }
+
+.about {
+  width: 90%;
+  margin-left: 5%;
+  padding: 5% 0; }
+  .about .aboutMe {
+    width: 65%;
+    display: inline-block;
+    font-size: 4.5em;
+    line-height: .9em;
+    margin-left: 2%; }
+  .about img {
+    width: 30%;
+    vertical-align: top;
+    margin-left: 2%; }
+
+.work {
+  width: 90%;
+  margin-left: 5%; }
+  .work .infoColumn {
+    width: 45%;
+    display: inline-block;
+    border-right: 1px dotted #CDCCCC;
+    padding-right: 5%;
+    vertical-align: top; }
+  .work .imageColumn {
+    width: 45%;
+    display: inline-block;
+    padding-left: 5%;
+    vertical-align: top; }
+    .work .imageColumn img {
+      width: 100%; }
+  .work .project {
+    height: 250px;
+    padding-top: 5%;
+    border-top: 1px solid #CDCCCC; }
+  .work .project:last-child {
+    border-bottom: 1px solid #CDCCCC; }
+
+/*# sourceMappingURL=main.css.map */
