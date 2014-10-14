@@ -23,13 +23,10 @@ h1, h2, h3, p, h4{
 }
 a{
   color:$blue;
+  text-decoration:none;
   &:visited{
     color:$blue;
   }
-}
-.glyphicon{
-  margin:0 2%;
-  color:$coral;
 }
 
 .wrapper {
@@ -78,7 +75,7 @@ a{
   .aboutMe{
     width:65%;
     display:inline-block;
-    font-size:4.5em;
+    font-size:4em;
     line-height:.9em;
     margin-left:2%;
   }

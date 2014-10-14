@@ -14,13 +14,10 @@ h1, h2, h3, p, h4 {
   color: #4A494A; }
 
 a {
-  color: #69C4CA; }
+  color: #69C4CA;
+  text-decoration: none; }
   a:visited {
     color: #69C4CA; }
-
-.glyphicon {
-  margin: 0 2%;
-  color: #D45F5E; }
 
 .wrapper {
   position: relative;
@@ -64,7 +61,7 @@ a {
   .about .aboutMe {
     width: 65%;
     display: inline-block;
-    font-size: 4.5em;
+    font-size: 4em;
     line-height: .9em;
     margin-left: 2%; }
   .about img {
