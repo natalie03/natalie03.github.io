@@ -11,6 +11,9 @@ $blue: #69C4CA;
 .coral{
   color:$coral;
 }
+.name{
+  text-align:center;
+}
 body{
   font-family: 'PT Sans Narrow', sans-serif;
   background-color:$grey;
@@ -44,7 +47,7 @@ a{
   position: fixed;
   top: 0;
   left: 0;
-  width: 15%;
+  width: 18%;
   height: 100%;
   border-right: $dottedLines;
   padding:2%;
@@ -64,7 +67,7 @@ a{
   }
 }
 .rightContent{
-  width:80%;
+  width:77%;
   float:right;
   height:100%;
   overflow:scroll;
@@ -121,4 +124,20 @@ a{
   width:90%;
   margin-left:5%;
   padding-top:5%;
+  h2{
+    border-bottom:$dottedLines;
+    margin:2.5% 0;
+  }
+  .leftColumn{
+    width:45%;
+    display:inline-block;
+    padding-right:5%;
+    vertical-align:top;
+  }
+  .rightColumn{
+    width:44%;
+    display:inline-block;
+    padding-left:5%;
+    vertical-align:top;
+  }
 }
