@@ -16,6 +16,9 @@ h1, h2, h3, p, h4 {
   padding: 0;
   color: #4A494A; }
 
+li {
+  color: #4A494A; }
+
 i {
   margin: 0 2%;
   color: #D45F5E; }
@@ -25,6 +28,9 @@ a {
   text-decoration: none; }
   a:visited {
     color: #69C4CA; }
+
+.hide {
+  display: none; }
 
 .wrapper {
   position: relative;
@@ -116,5 +122,32 @@ a {
     display: inline-block;
     padding-left: 5%;
     vertical-align: top; }
+
+@media all and (max-width: 1185px) {
+  .about .aboutMe {
+    font-size: 3.25em; } }
+@media all and (max-width: 1000px) {
+  .about, .work, .resume {
+    width: 100%;
+    margin-left: 0; }
+
+  .leftNav {
+    font-size: .8em; } }
+@media all and (max-width: 900px) {
+  .leftNav {
+    width: 100%;
+    display: block;
+    position: initial;
+    text-align: center; }
+    .leftNav img {
+      width: 10%; }
+    .leftNav ul:first-child li {
+      display: inline-block;
+      padding: 0; }
+    .leftNav ul li {
+      margin: 0 2%; }
+
+  .rightContent {
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
