@@ -37,6 +37,9 @@ a{
   &:visited{
     color:$blue;
   }
+  &:hover{
+    color:$coral;
+  }
 }
 .hide{
   display:none;
@@ -56,6 +59,7 @@ a{
   height: 100%;
   border-right: $dottedLines;
   padding:2%;
+  text-align:center;
   img{
     width:100%;
   }
@@ -68,6 +72,14 @@ a{
     padding:0;
     li{
       padding:5% 0;
+    }
+  }
+}
+.contact{
+  ul{
+    li{
+      display:inline-block;
+      margin:0 5%;
     }
   }
 }
@@ -114,6 +126,10 @@ a{
     vertical-align:top;
     img{
       width:100%;
+      &:hover{
+        opacity:.5;
+        transition:all 1s ease;
+      }
     }
   }
   .project{
@@ -158,9 +174,6 @@ a{
     width:100%;
     margin-left:0;
   }
-  .leftNav{
-    font-size:.8em;
-  }
 }
 @media all and (max-width: 900px){
   .leftNav{
@@ -168,9 +181,11 @@ a{
     display:block;
     position:initial;
     text-align:center;
+    font-size:1.25em;
     img{
       width:10%;
     }
+
     ul:first-child{
       li{
         display:inline-block;
