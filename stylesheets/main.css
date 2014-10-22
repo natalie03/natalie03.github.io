@@ -109,7 +109,7 @@ a {
         opacity: .5;
         transition: all 1s ease; }
   .work .project {
-    height: 275px;
+    height: 260px;
     padding-top: 5%;
     border-top: 1px solid #CDCCCC; }
   .work .project:last-child {
