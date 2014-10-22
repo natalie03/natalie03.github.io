@@ -36,6 +36,9 @@ a {
 .hide {
   display: none; }
 
+.hideImg {
+  display: none; }
+
 .wrapper {
   position: relative;
   width: 100%;
@@ -54,7 +57,10 @@ a {
   text-align: center; }
   .leftNav img {
     width: 90%;
-    padding-bottom: 7%; }
+    padding-bottom: 7%;
+    transition: all .8s ease; }
+    .leftNav img:hover {
+      transform: rotate(360deg); }
   .leftNav .submenu {
     display: none; }
   .leftNav ul:first-child {
@@ -183,5 +189,17 @@ a {
 
   .rightContent {
     width: 100%; } }
+@media all and (max-width: 570px) {
+  .work .imageColumn {
+    display: none; }
+  .work .infoColumn {
+    width: 100%; }
+    .work .infoColumn img {
+      width: 50%; }
+  .work .project {
+    height: initial; }
+
+  .hideImg {
+    display: block; } }
 
 /*# sourceMappingURL=main.css.map */
