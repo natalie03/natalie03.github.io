@@ -17,6 +17,8 @@ $blue: #69C4CA;
 body{
   font-family: 'PT Sans Narrow', sans-serif;
   background-color:$grey;
+  margin:0;
+  padding:0;
 }
 h1, h2, h3, p, h4{
   margin:0;
@@ -61,7 +63,9 @@ a{
   padding:2%;
   text-align:center;
   img{
-    width:100%;
+    width:90%;
+    padding-bottom:7%;
+
   }
   .submenu{
     display:none;
@@ -162,6 +166,7 @@ a{
     vertical-align:top;
   }
 }
+
 @media all and (max-width: 1185px){
   .about{
     .aboutMe{
@@ -171,21 +176,50 @@ a{
 }
 @media all and (max-width: 1000px){
   .about, .work, .resume{
-    width:100%;
-    margin-left:0;
+    width:95%;
+    margin-left:2.5%;
   }
 }
-@media all and (max-width: 900px){
+@media all and (max-width: 860px){
+.about{
+  .aboutMe{
+    font-size:2.75em;
+  }
+}
+}
+@media all and (max-width: 780px){
+  .about{
+    .aboutMe{
+      font-size:3.25em;
+    }
+  }
   .leftNav{
     width:100%;
+    height:initial;
     display:block;
     position:initial;
     text-align:center;
-    font-size:1.25em;
+    font-size:1em;
+    margin:0;
+    padding:0;
+    border:none;
+    .sticky{
+      border-bottom:$dottedLines;
+      padding-bottom:1%;
+    }
+    .cloned{
+      width:100%;
+      background-color:$grey;
+    }
     img{
       width:10%;
-    }
+      display:inline-block;
+      padding:2% 0;
 
+    }
+    .cont{
+      display:none;
+    }
     ul:first-child{
       li{
         display:inline-block;
