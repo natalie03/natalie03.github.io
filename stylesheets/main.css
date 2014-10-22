@@ -96,10 +96,10 @@ a {
   width: 90%;
   margin-left: 5%; }
   .work .infoColumn {
-    width: 45%;
+    width: 47.5%;
     display: inline-block;
     border-right: 2px dotted #CDCCCC;
-    padding-right: 5%;
+    padding-right: 2.5%;
     vertical-align: top; }
   .work .imageColumn {
     width: 44%;
@@ -142,7 +142,10 @@ a {
 @media all and (max-width: 1000px) {
   .about, .work, .resume {
     width: 95%;
-    margin-left: 2.5%; } }
+    margin-left: 2.5%; }
+
+  .work .infoColumn {
+    font-size: .95em; } }
 @media all and (max-width: 860px) {
   .about .aboutMe {
     font-size: 2.75em; } }
