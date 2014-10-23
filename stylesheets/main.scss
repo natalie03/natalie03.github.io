@@ -291,12 +291,21 @@ a{
 }
 @media all and (max-width: 375px){
 .about{
+  text-align:center;
   img{
     display:none;
   }
   .aboutMe{
     width:100%;
-    font-size:2.5em;
+    font-size:1.5em;
+  }
+}
+.resume{
+  .leftColumn{
+    width:100%;
+  }
+  .rightColumn{
+    width:100%;
   }
 }
 }

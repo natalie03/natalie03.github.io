@@ -212,10 +212,17 @@ a {
   .about .aboutMe {
     font-size: 1.75em; } }
 @media all and (max-width: 375px) {
-  .about img {
-    display: none; }
-  .about .aboutMe {
-    width: 100%;
-    font-size: 2.5em; } }
+  .about {
+    text-align: center; }
+    .about img {
+      display: none; }
+    .about .aboutMe {
+      width: 100%;
+      font-size: 1.5em; }
+
+  .resume .leftColumn {
+    width: 100%; }
+  .resume .rightColumn {
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
