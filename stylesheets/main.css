@@ -189,17 +189,26 @@ a {
 
   .rightContent {
     width: 100%; } }
+@media all and (max-width: 700px) {
+  .about .aboutMe {
+    font-size: 2.5em; } }
 @media all and (max-width: 570px) {
   .work .imageColumn {
     display: none; }
   .work .infoColumn {
     width: 100%; }
     .work .infoColumn img {
-      width: 50%; }
+      width: 100%; }
   .work .project {
     height: initial; }
 
   .hideImg {
-    display: block; } }
+    display: block; }
+
+  .about .aboutMe {
+    font-size: 2em; } }
+@media all and (max-width: 425px) {
+  .about .aboutMe {
+    font-size: 1.75em; } }
 
 /*# sourceMappingURL=main.css.map */
