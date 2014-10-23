@@ -264,6 +264,7 @@ a{
     }
     .infoColumn{
       width:100%;
+      border:none;
       img{
         width:100%;
       }
@@ -285,6 +286,17 @@ a{
 .about{
   .aboutMe{
     font-size:1.75em;
+  }
+}
+}
+@media all and (max-width: 375px){
+.about{
+  img{
+    display:none;
+  }
+  .aboutMe{
+    width:100%;
+    font-size:2.5em;
   }
 }
 }
