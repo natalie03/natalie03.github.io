@@ -108,9 +108,9 @@ a {
     padding-right: 2.5%;
     vertical-align: top; }
   .work .imageColumn {
-    width: 44%;
+    width: 46.5%;
     display: inline-block;
-    padding-left: 5%;
+    padding-left: 2.5%;
     vertical-align: top; }
     .work .imageColumn img {
       width: 100%; }
@@ -121,6 +121,9 @@ a {
     height: 260px;
     padding-top: 25px;
     border-top: 1px solid #CDCCCC; }
+  .work .wideProject {
+    padding: 25px 0;
+    border-bottom: 1px solid #CDCCCC; }
   .work .project:last-child {
     border-bottom: 1px solid #CDCCCC; }
 

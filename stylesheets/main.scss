@@ -132,9 +132,9 @@ a{
     vertical-align:top;
   }
   .imageColumn{
-    width:44%;
+    width:46.5%;
     display:inline-block;
-    padding-left:5%;
+    padding-left:2.5%;
     vertical-align:top;
     img{
       width:100%;
@@ -148,6 +148,10 @@ a{
     height:260px;
     padding-top:25px;
     border-top:$solidLines;
+  }
+  .wideProject{
+    padding:25px 0;
+    border-bottom:$solidLines;
   }
   .project:last-child{
     border-bottom:$solidLines;
