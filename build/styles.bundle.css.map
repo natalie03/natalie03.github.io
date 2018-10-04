@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./node_modules/react-accessible-accordion/dist/minimal-example.css"],"names":[],"mappings":"AAAA;AACA,iBAAiB;;AAEjB;AACA,gBAAgB","file":"styles.bundle.css","sourcesContent":[".accordion__body {\n  display: block; }\n\n.accordion__body--hidden {\n  display: none; }\n"],"sourceRoot":""}
