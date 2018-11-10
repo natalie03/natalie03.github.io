@@ -20,7 +20,7 @@ html, body {
     font-family: $copy;  
 }
 section {
-    padding: 2em 45px;
+    padding: 2em 25px;
     @include respond($screen-md) {
         padding: 5em;
     }
@@ -29,7 +29,7 @@ section {
     }
 }
 footer {
-    padding: 2em 45px;
+    padding: 2em 25px;
     @include respond($screen-md) {
         padding: 5em;
     }
@@ -67,7 +67,7 @@ main {
     }
 }
 header {
-    padding: 10px 45px;
+    padding: 10px 25px;
     z-index: 999;
     @include respond($screen-md) {
         padding: 15px 5em;

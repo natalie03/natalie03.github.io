@@ -127,7 +127,7 @@ html, body {
   font-family: "Poppins", sans-serif; }
 
 section {
-  padding: 2em 45px; }
+  padding: 2em 25px; }
   @media only screen and (min-width: 1024px) {
     section {
       padding: 5em; } }
@@ -136,7 +136,7 @@ section {
       padding: 8em 5em; } }
 
 footer {
-  padding: 2em 45px; }
+  padding: 2em 25px; }
   @media only screen and (min-width: 1024px) {
     footer {
       padding: 5em; } }
@@ -170,7 +170,7 @@ main {
     color: #F1C7B8; } }
 
 header {
-  padding: 10px 45px;
+  padding: 10px 25px;
   z-index: 999; }
   @media only screen and (min-width: 1024px) {
     header {
