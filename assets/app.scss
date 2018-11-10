@@ -99,17 +99,36 @@ header {
         color: $black;
         font-weight: 700;
         padding: 15px 0;
+        background-image: url(../assets/images/email.svg);
+        background-position: center;
+        background-size: 40px;
+        background-repeat: no-repeat;
+        text-transform: lowercase;
+        padding: 15px 0;
+        margin: 0;
+        text-indent: -9999px;
+        width: 40px;
+        @include respond($screen-sm) {
+            text-indent: 0;
+            width: auto;        
+            background-size: 68px;
+            
+        }
     }
 }
 
 h1.site-title {
     background-image: url(../assets/images/shapes/logo_triangle_68_68.svg);
     background-position: center;
-    background-size: 68px;
+    background-size: 40px;
     background-repeat: no-repeat;
     text-transform: lowercase;
     padding: 15px 0;
     margin: 0;
+    @include respond($screen-sm) {
+        background-size: 68px;
+        width: auto;
+    }
 }
 
 #about {
@@ -139,21 +158,25 @@ h1.site-title {
         transform-origin: center;
     }
     p.intro {
-        background-image: url(../assets/images/natalie-bio.png);
-        background-size: 203px;
+        background-image: url(../assets/images/bio@2x.png);
+        background-size: 300px;
         background-position: top center;
-        padding-top: 238px;
-        background-size: 203px;
+        padding-top: 325px;
+        background-size: 300px;
         background-repeat: no-repeat;
         position: relative;
         z-index: 1;
         margin-top: 75px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
         @include respond ($screen-md) {
-            padding-left: 280px;
+            padding-left: 380px;
             padding-top: 75px;
             padding-bottom: 75px;
             background-position: left center;
             margin-top: 0;
+            max-width: 1200px;
 
         }
     }
@@ -182,7 +205,7 @@ h1.site-title {
 
 #work {
     position: relative;
-    margin: 250px 0 120px;
+    margin: 150px 0 120px;
     @include respond ($screen-md) {
         margin-bottom: 150px;
         margin-top: 50px
@@ -220,7 +243,7 @@ h1.site-title {
         @include make-bg-element;
         width: 214px;
         height: 185px;
-        bottom: -150px;
+        bottom: -90px;
         right: 40px;
         background-size: 214px 185px;
         background-image: url(../assets/images/shapes/body_triangle.svg);
@@ -366,7 +389,7 @@ h1.site-title {
 }
 
 .collapse {
-    max-height: 660px;
+    max-height: 530px;
     position: relative;
     overflow: hidden;
     transition: max-height 1s;
@@ -403,9 +426,11 @@ button {
     cursor: pointer;
     width: 100%;
     background-image: url(../assets/images/shapes/logo_triangle_68_68.svg);
-    background-size: 68px;
-    background-position: 49.5%;
+    background-size: 48px;
+    background-position: 49.3% 0;
     background-repeat: no-repeat;
+    background-color: $white;
+
     &:hover {
         @include respond ($screen-sm) {
             animation: rainbow 6s ease infinite;
@@ -446,21 +471,23 @@ button {
 .accordion__body {
     padding: 8px 20px;
     display: block;
-    animation: move-down 0.5s ease-in;
-    border-left: 5px solid $red;
+    animation: fadein .8s ease-in;
+    border-left: 5px solid $yellow;
     margin: 8px 0;
     p {
         margin: 0 0 7px;
     }
     a {
         font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
 }
 
 .accordion__body--hidden {
     display: none;
     opacity: 0;
-    animation: move-up 0.5s ease-in;
+    animation: fadein .8s ease-out;
 }
 
 .accordion__title > *:last-child,
@@ -564,12 +591,12 @@ button {
 }
 
 .accordion__title--animated:hover .accordion__arrow {
-    animation-name: move-down;
+    animation-name: fadein;
     animation-duration: 1.5s;
 }
 
 .accordion__title--animated[aria-expanded='true']:hover .accordion__arrow {
-    animation-name: move-up;
+    animation-name: fadein;
     animation-duration: 1.5s;
 }
 
@@ -590,6 +617,17 @@ button {
     height: 60px;
     background-size: 60px;
     display: block;
+}
+#email,
+#email:visited {
+    color: $black;
+    text-align: center;
+    font-weight: $bold;
+    display: block;
+    margin-top: 32px;
+    @include respond ($screen-sm) {
+        text-align: right;
+    }
 }
 .github {
     background-image: url(../assets/images/github.svg);
@@ -652,7 +690,7 @@ button {
             background-size: 550px 40px;
         }
     }
-    .intro, .social-media {
+    .intro, .social-media, #email {
         z-index: 3;
         position: relative;
     }

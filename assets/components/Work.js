@@ -29,7 +29,7 @@ export default class Work extends React.Component {
                         <AccordionItemBody>
                             <p>{ project.role }</p>
                             <p>Tech: { project.tech }</p>
-                            <a href={ project.url }>See it</a>
+                            <a href={ project.url } title={'Visit ' + project.name }>See it</a>
                         </AccordionItemBody>
                     </AccordionItem> 
                     )               

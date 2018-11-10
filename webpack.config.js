@@ -24,7 +24,14 @@ var config = {
             {
                 test: /\.jsx?$/,
                 include: `${APP_DIR}`,
-                use: ['babel-loader']
+                use: [
+                  {
+                    loader: 'babel-loader',
+                    options: {
+                      presets: ['react']
+                    }
+                  }
+                ],
             },
             {
                 test: /\.(sa|sc|c)ss$/,

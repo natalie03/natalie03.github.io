@@ -42,3 +42,13 @@ a {
 		color: $primary;
 	}
 }
+a,
+button,
+.accordion__title {
+	&:focus {
+		outline-color: $blue;
+		outline-offset: -2px;
+		outline-style: auto;
+		outline-width: 5px;
+	}
+}

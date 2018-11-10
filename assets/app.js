@@ -70,7 +70,7 @@ class App extends React.Component {
                 <ErrorBoundary>
                 <div className="flex-wrap-half">
                     <Work projects={ projects } selectProject={ this.selectProject } />
-                    <ComputerScreen imgSrc={ projects[selected_project].img} />
+                    <ComputerScreen imgSrc={ projects[selected_project].img} title={ projects[selected_project].name} />
                 </div>
                 </ErrorBoundary>
             </div>
