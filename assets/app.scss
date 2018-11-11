@@ -132,6 +132,8 @@ h1.site-title {
 }
 
 #about {
+    position: relative;
+    overflow: hidden;
     &:before, &:after {
         @include make-bg-element;
     }
