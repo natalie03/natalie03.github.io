@@ -381,7 +381,7 @@ h1.site-title {
     }
 }
 
-.current-company {
+.double-company {
     @include respond ($screen-sm) {
         display: flex;
         > div {

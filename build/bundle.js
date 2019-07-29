@@ -21570,8 +21570,8 @@ if (false) {} else {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/natalie/Desktop/newsite/natalie03.github.io/assets/app.js */"./assets/app.js");
-module.exports = __webpack_require__(/*! /Users/natalie/Desktop/newsite/natalie03.github.io/assets/app.scss */"./assets/app.scss");
+__webpack_require__(/*! /Users/nataliemiller/Projects/natalie03.github.io/assets/app.js */"./assets/app.js");
+module.exports = __webpack_require__(/*! /Users/nataliemiller/Projects/natalie03.github.io/assets/app.scss */"./assets/app.scss");
 
 
 /***/ })

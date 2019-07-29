@@ -469,10 +469,10 @@ h1.site-title {
           display: block; } }
 
 @media only screen and (min-width: 768px) {
-  .current-company {
+  .double-company {
     display: -ms-flexbox;
     display: flex; }
-    .current-company > div {
+    .double-company > div {
       width: 50%; } }
 
 .collapse {
