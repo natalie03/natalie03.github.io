@@ -1,0 +1,48 @@
+// Colors 
+$yellow: #fffb91;
+$blue: #0054db;
+$white: #ecfff6;
+$orange: #f44b37;
+
+// Fonts
+$heading-family: 'MirthaDisplayBold', Helvetica, Arial, Sans-Serif;
+$copy-family: 'Judson', sans-serif;
+
+//Breakpoints
+$screen-sm: 768px;
+$screen-md: 1024px;
+$screen-lg: 1216px;
+
+
+/* Custom Mixins
+----------------------------------------------- */
+@mixin respond ($breakpoint) {
+    @media only screen and (min-width: $breakpoint) {
+        @content;
+    }
+}
+
+@mixin sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+@mixin container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    @include respond($screen-sm) {
+      padding: 0 80px;
+    }
+}
+
+.oh {
+    overflow: hidden;
+}
+

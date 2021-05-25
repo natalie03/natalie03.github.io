@@ -1,18 +1,38 @@
 {
   "name": "natalie03.github.io",
   "version": "2.0.0",
-  "description": "Portfolio website",
-  "main": "index.html",
-  "repository": "git@github.com:natalie03/natalie03.github.io.git",
-  "author": "Natalie Miller <nataliemiller03@gmail.com>",
-  "license": "MIT",
-  "private": false,
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "parcel ./src/index.html",
-    "prebuild-dev": "shx rm -rf dist/*",
-    "build-dev": "parcel build ./src/index.html --no-minify --public-url ./",
-    "prebuild": "shx rm -rf dist/*",
-    "build": "parcel build ./src/index.html --public-url ./",
-    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
+    "cleanup": "rm -rf .cache dist",
+    "preinstall": "npx npm-force-resolutions",
+    "start": "npm run cleanup && parcel index.html --public-url '/'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natalie03/natalie03.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natalie03/natalie03.github.io/issues"
+  },
+  "homepage": "https://github.com/natalie03/natalie03.github.io#readme",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "gsap": "^3.6.0",
+    "react": "*",
+    "react-dom": "^17.0.1",
+    "react-transition-group": "^4.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.32.5"
+  },
+  "resolutions": {
+    "node-forge": "0.10.0"
   }
 }
