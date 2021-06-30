@@ -1,43 +1,38 @@
 {
-    "name": "nataliecmiller.com",
-    "version": "1.0.0",
-    "scripts": {
-        "build": "webpack --mode production",
-        "watch": "webpack --progress --watch",
-        "clean": "rm -rf ./build/*",
-        "start": "webpack-serve --open"
-    },
-    "dependencies": {
-        "axios": "^0.18.0",
-        "grunt": "~0.4.5",
-        "grunt-composer": "~0.4.4",
-        "grunt-shell": "~0.7.0",
-        "immutable": "^3.8.2",
-        "postcss-loader": "^3.0.0",
-        "react": "^16.4.1",
-        "react-accessible-accordion": "^2.4.4",
-        "react-dom": "^16.4.1",
-        "url-loader": "^1.1.1",
-        "webpack": "^4.15.1"
-    },
-    "devDependencies": {
-        "babel-core": "^6.26.3",
-        "babel-loader": "^7.1.5",
-        "babel-plugin-transform-async-to-generator": "^6.24.1",
-        "babel-plugin-transform-class-properties": "^6.24.1",
-        "babel-plugin-transform-regenerator": "^6.26.0",
-        "babel-plugin-transform-runtime": "^6.23.0",
-        "babel-polyfill": "^6.26.0",
-        "babel-preset-env": "^1.7.0",
-        "babel-preset-react": "^6.24.1",
-        "babel-preset-stage-2": "^6.24.1",
-        "css-loader": "^0.28.11",
-        "file-loader": "^2.0.0",
-        "mini-css-extract-plugin": "^0.4.1",
-        "node-sass": "^4.9.2",
-        "sass-loader": "^7.0.3",
-        "style-loader": "^0.21.0",
-        "webpack-cli": "^3.1.0",
-        "webpack-serve": "^2.0.2"
-    }
+  "name": "natalie03.github.io",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cleanup": "rm -rf .cache dist",
+    "preinstall": "npx npm-force-resolutions",
+    "start": "npm run cleanup && parcel index.html --public-url '/'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natalie03/natalie03.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natalie03/natalie03.github.io/issues"
+  },
+  "homepage": "https://github.com/natalie03/natalie03.github.io#readme",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "gsap": "^3.6.0",
+    "react": "*",
+    "react-dom": "^17.0.1",
+    "react-transition-group": "^4.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.32.5"
+  },
+  "resolutions": {
+    "node-forge": "0.10.0"
+  }
 }

@@ -1,0 +1,469 @@
+@import './variables.scss';
+
+$desktop-font-base: 180px;
+$mobile-font-base: 90px;
+$body-border-base: 40px;
+
+*:focus {
+  outline: none;
+}
+body {
+  margin: 0;
+  color: $blue;
+  min-height: 100vh;
+  background: $white;
+}
+
+h1 {
+  font-family: $heading-family;
+}
+
+h1.page-title {
+  font-size: $mobile-font-base;
+  margin-top: 0;
+  margin: 0 0 1rem;
+  @include respond ($screen-sm) {
+    font-size: $desktop-font-base;
+  }
+}
+
+.container {
+  @include container();
+}
+
+.content {
+  padding: 20px 0;
+  @include respond($screen-sm) {
+    padding: 30px 0;
+  }
+
+  &:after,
+  &:before {
+    display: block;
+    width: 2px;
+    height: 100vh;
+    content: '';
+    position: fixed;
+    top: 0;
+    pointer-events: none;
+    background-color: $blue;
+    z-index: 999;
+  }
+  &:before {
+    left: 20px;
+    @include respond($screen-sm) {
+      left: 80px;
+    }
+  }
+  &:after {
+    right: 20px; 
+    @include respond($screen-sm) {
+      right: 80px;
+    }
+  }
+}
+
+footer {
+  @include respond($screen-sm) {
+    position: fixed;
+    width: 0;
+    height: 0;
+    transform: rotate(90deg);
+    top: 0;
+    right: 0;
+    text-align: center;
+    overflow: visible;
+    a {
+      width: 100vh;
+    }
+  }
+  a {
+    padding: 12px 20px;
+    text-align: center;
+    display: block;
+    font-family: $heading-family;
+    font-size: $desktop-font-base / 4;
+    color: $blue;
+    text-decoration: none;
+    &:focus {
+      color: $orange;
+      text-decoration: underline;
+    }
+  }
+}
+
+.header {
+  z-index: 2;
+  &__title {
+    display: inline-block;
+    font-size: $mobile-font-base / 1.5;
+    @include respond ($screen-sm) {
+      font-size: $desktop-font-base / 2;
+    }
+    @include respond ($screen-md) {
+      font-size: $desktop-font-base;
+    }
+    
+    margin: 0 0 1rem;
+    .spacer {
+      width: 10px;
+      @include respond ($screen-sm) {
+        width: 20px;
+      }
+    }
+  }
+  &__intro {
+    margin-bottom: 5rem;
+    margin-top: 0;
+    line-height: 1.35;
+    font-family: $copy-family;
+    font-size: $mobile-font-base / 3;
+    @include respond ($screen-sm) {
+      font-size: $desktop-font-base / 4;
+      max-width: 80%;
+    }
+    span {
+      display: inline-block;
+      color: $white;
+      background-color: $blue;
+      line-height: 1.2;
+      padding: 0 6px;
+      transform-origin: left;
+      transition-property: transform, color;
+    }
+  }
+}
+
+.header__intro span {
+  background-color: $blue;
+}
+
+.tab {
+  &__item {
+    @include container();
+  }
+  &__item-btn {
+    width: 100%;
+    font-size: $mobile-font-base / 3;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: left;
+    background-color: $white;
+    color: $blue;
+    border: 0;
+    font-family: $heading-family;
+    border-bottom: 1px solid $blue;
+    cursor: pointer;
+    padding: 14px 24px;
+    @include respond ($screen-sm) {
+      font-size: $desktop-font-base / 4;
+      letter-spacing: 6px;
+      padding: 20px 30px;
+
+    }
+  }
+}
+.tab__content {
+  min-height: calc(100vh - 158px);
+  box-sizing: border-box;
+  transition: height .75s ease;
+  overflow: hidden;
+  &:focus {
+    outline: 2px solid $orange;
+  }
+  @include respond ($screen-sm) {
+    min-height: calc(100vh - 90px);
+  }
+}
+
+.tab__content-wrap {
+  padding: 14px 7px;
+
+  @include respond ($screen-sm) {
+    padding: 48px 24px;
+  }
+}
+
+#work {
+  ul {
+    list-style: none;
+    margin-bottom: 80px;
+    max-width: 900px;
+    padding-left: 20px;
+    ul li {
+      font-weight: 400;
+      font-family: $copy-family;
+      font-size: $mobile-font-base / 6;
+      letter-spacing: 1px;
+      text-indent: -10px;
+      margin-bottom: 16px;
+      @include respond ($screen-sm) {
+        font-size: $desktop-font-base / 10;
+      }
+      &:before {
+        content: ".";
+        line-height: 0;
+        padding-bottom: 27px;
+      }
+    }
+    li {
+      font-family: $heading-family;
+      line-height: 1;
+      font-weight: 700;
+      position: relative;
+      margin-bottom: 20px;
+      font-size: $mobile-font-base / 3;
+      @include respond ($screen-sm) {
+        font-size: $desktop-font-base / 4;
+
+      }
+      &:before {
+        font-family: $heading-family;
+        content: "*";
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        padding-bottom: 9px;
+        font-size: 30px;
+
+        @include respond ($screen-sm) {
+          font-size: 40px;
+
+        }
+      }
+      span {
+        display: block;
+        margin-left: 34px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-family: $copy-family;
+        @include respond ($screen-sm) {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}
+
+.work__has-padding {
+  margin-bottom: 60px !important;
+}
+
+.contact p {
+  font-family: $copy-family;
+  padding: 0 20px;
+  font-size: $mobile-font-base / 4;
+  @include respond ($screen-sm) {
+    font-size: $desktop-font-base / 4;
+    padding: 0 40px;
+
+  }
+  a {
+    color: $white;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.technologies {
+  padding: 0 20px;
+  @include respond ($screen-sm) {
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  h3 {
+    font-family: $heading-family;
+    font-size: 2rem;
+    margin-bottom: 14px;
+  }
+  ul { 
+    list-style: none;
+    padding-left: 20px;
+      li {
+      font-weight: 400;
+      font-family: $copy-family;
+      font-size: $desktop-font-base / 10;
+      text-indent: -10px;
+      &:before {
+        font-family: $heading-family;
+        display: inline-block;
+        font-size: 40px;
+        vertical-align: middle;
+        margin-right: 10px;
+        content: ".";
+        line-height: 0;
+        padding-bottom: 27px;
+      }
+    }
+  }
+}
+
+$offset : -80px;
+$count : 40;
+$duration : 0.75;
+
+
+@keyframes wave {
+  from { transform : translateY(0); }
+  to   { transform : translateY( $offset ); }
+}
+.wavetext span {
+  display: inline-block;
+  // animation-duration: #{$duration}s;
+  // animation-name: wave;
+  // animation-iteration-count: 2;
+  // animation-direction: alternate;
+}
+
+@for $i from 0 to $count {
+  .wavetext :nth-child( #{$count}n + #{$i} ) {
+      animation-delay : 
+        -#{($count - $i) * 1.5 * $duration / $count }s;
+
+  }
+}
+
+.tabs__flex-wrap {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  @include respond ($screen-sm) {
+    flex-direction: row;
+  }
+}
+
+.tabs__nav {
+  width: 100%;
+  border-top: 2px solid $blue;
+  border-bottom: 2px solid $blue;
+  .container {
+    margin-right: 0;
+  }
+  button {
+    background: none;
+    border: none;
+    border-left: 2px solid $blue;
+    padding: 13px 30px;
+    font-family: $copy-family;
+    font-size: $mobile-font-base / 5;
+    letter-spacing: 1px;
+    color: $blue;
+    cursor: pointer;
+    @include respond ($screen-sm) {
+      font-size: $desktop-font-base / 10;
+      padding: 18px 50px;
+    }
+    &:focus {
+      background-color: $blue;
+      outline: none;
+      text-decoration: underline;
+      color: $white;
+    }
+    &.active {
+      background-color: $blue;
+      color: $white;
+      &:focus {
+        background-color: $blue;
+      }
+    }
+  }
+}
+
+.tab__content {
+  padding: 20px;
+  position: relative;
+  @include respond ($screen-sm) {
+    padding: 80px;
+  }
+}
+.tabs__transition {
+  width: calc(100% - 40px);
+  height: 100vh;
+  transform: scaleY(0);
+  transform-origin: top center;
+  transition: transform 400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  background-color: $orange;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  z-index: 9;
+  @include respond($screen-sm) {
+    width: calc(100% - 160px);
+    left: 80px;
+  }
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: transform 400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition-delay: 200ms;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: $blue;
+  }
+}
+.tabs__text {
+  transition: opacity .5s ease;
+  transition-delay: 400ms;
+}
+.my-node-enter {
+  .tabs__transition {
+    transform: scaleY(0);
+    &:before {
+      transform: scaleY(0)
+    }
+  }
+  .tabs__text {
+    opacity: 0;
+  }
+}
+.my-node-enter-active {
+  .tabs__transition {
+    transform: scaleY(1);
+    &:before {
+      transform: scaleY(1)
+    }
+    
+  }
+  .tabs__text {
+    opacity: 0;
+  }
+}
+.my-node-exit {
+  .tabs__transition {
+    transform: scaleY(1);
+    &:before {
+      transform: scaleY(1)
+    }
+  }
+  .tabs__text {
+    opacity: 1;
+  }
+}
+.my-node-exit-active {
+  .tabs__transition {
+    transform: scaleY(0);
+    &:before {
+      transform: scaleY(0)
+    }
+  }
+  .tabs__text {
+    opacity: 1;
+  }
+
+}
+
+.my-node-enter-done {
+  .tabs__text {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "technologies": [
+    {          
+      "title": "HTML and CSS",
+      "items": [
+        "HTML5, CSS3",
+        "SASS/SCSS",
+        "LESS",
+        "Responsive Design"
+      ]
+    }, {
+      "title": "JavaScript",
+      "items": [
+        "ES6",
+        "ReactJS, Redux, XState",
+        "React Hooks",
+        "Vue.js",
+        "NextJS + Express",
+        "GSAP"
+      ]
+    }, {
+      "title": "Tools and Frameworks:",
+      "items": [
+        "Grunt, Gulp, Webpack, Parcel",
+        "NPM, Yarn",
+        "Git + Github",
+        "Arcanist, Phabricator",
+        "Bootstrap, Bulma, Tailwind"
+      ]
+    }, {
+      "title": "Design Software:",
+      "items": [
+        "Adobe Creative Suite: PhotoShop, inDesign, basic After Effects",
+        "Sketch",
+        "Figma"
+      ]
+    }, {
+      "title": "Other Tech:",
+      "items": [
+        "Swift/ iOS prototyping",
+        "AWS",
+        "AEM",
+        "WordPress",
+        "Shopify Theme Development",
+        "Craft CMS",
+        "WooCommerce",
+        "Laravel"
+      ]
+    }
+  ]
+}
